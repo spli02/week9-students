@@ -17,7 +17,7 @@
 
         <div class="lessons">
             <h2>Lessons</h2>
-            From {{ date('g:i A', strtotime($student->available_from)) }} to {{ date('g:i A', strtotime($student->available_until)) }}.
+            From {{ date('g:i A', strtotime($student->lessons_from)) }} to {{ date('g:i A', strtotime($student->lessons_until)) }}.
 
             <div class="status unavailable">Current status: <span>Unavailable</span></div>
         </div>
@@ -27,8 +27,8 @@
     <section class="detention-assign">
         <h2>Give detention</h2>
 
-        <form action="" method="post">
-
+        <form action="{{ action('StudentController@store') }}" method="post">
+            @csrf
             <input type="text" name="subject" placeholder="Reason for detention">
 
             <textarea name="description" placeholder="Thorough description"></textarea>

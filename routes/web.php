@@ -16,3 +16,15 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+
+Route::get('index', function () {
+    return view('index');
+})->name('index');
+
+Route::get('/student/{student_slug}','StudentController@show');
+Route::post('/student/{student_slug}','StudentController@show');
+
+Route::get('/students','StudentController@index');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

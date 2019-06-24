@@ -13,19 +13,19 @@
     <a href="#" class="report">Give detention to someone</a>
 
     <div class="students">
-        <a href="#">
+        <a href="student/harry">
             <img src="img/harry.jpg" alt="">
         </a>
-        <a href="#">
+        <a href="student/hermione">
             <img src="img/hermione.jpg" alt="">
         </a>
-        <a href="#">
+        <a href="student/ron">
             <img src="img/ron.jpg" alt="">
         </a>
-        <a href="#">
+        <a href="student/tom">
             <img src="img/tom.jpg" alt="">
         </a>
-        <a href="#">
+        <a href="student/luna">
             <img src="img/luna.jpg" alt="">
         </a>
     </div>
